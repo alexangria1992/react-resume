@@ -2,6 +2,9 @@ import React from "react";
 import {FaFacebookF, FaTwitter, FaInstagram, FaPlay} from 'react-icons/fa'
 
 const Banner = () => {
+    const [state ] = React.useState({title: "Hi, I'm Alexandre Angrignon", text:
+     "I am a junior developper",
+    image: "/images/4.jpg" })
     return (
         <header className="header">
             <div className="container">
@@ -20,8 +23,8 @@ const Banner = () => {
                             <FaInstagram/>
                         </li>
                     </ul>
-                    <h1>Hi, I'm Alexandre Angrignon</h1>
-                    <p>I am a junior developper</p>
+                    <h1>{state.title}</h1>
+                    <p>{state.text}</p>
                     <div className="header__buttons">
                         <a href="" className="btn btn-outline">My Portfolio</a>&nbsp;&nbsp;&nbsp;
                         <a href="" className="btn btn-smart"><FaPlay className="play"/></a>&nbsp;&nbsp;&nbsp;
@@ -33,7 +36,7 @@ const Banner = () => {
                 </div>
                 <div className="col-6">
                     <div className="banner__img">
-                        <img src="/images/4.jpg" alt=""/>
+                        <img src={state.image} alt=""/>
                     </div>
                 </div>
             </div>
