@@ -48,7 +48,7 @@ text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate error
                         <p className="mainContent">{header.text}</p>
                         <div className="commonBorder">
 
-                        </div>
+                    </div>
                     </div>    
                       <div className="row bgMain">
                           {state.map(info => (
